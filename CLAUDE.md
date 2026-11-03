@@ -32,6 +32,7 @@ If the user is doing exploratory thinking and isn't ready for a structured plan,
 ## Other project context
 
 - Live at https://crownedcode.com (Vercel hosting, Neon Postgres, Resend email, PostHog + Vercel Analytics).
+- Team inbox `team@crownedcode.com` is on **Google Workspace** (moved from GoDaddy Microsoft 365 on 2026-11-03). DNS is at GoDaddy: MX → `smtp.google.com`, root SPF `v=spf1 include:_spf.google.com ~all`, DKIM at `google._domainkey`. Resend's records (`send.` subdomain, `resend._domainkey`) are separate and keep the contact form's lead emails working, so don't touch them when editing email DNS. Ignore GoDaddy prompts to set SPF back to `secureserver.net`.
 - Stack: Next.js 16 (App Router) + Tailwind v4 + Motion + react-three-fiber.
 - The original umbrella repo `CLAUDE.md` at `../CLAUDE.md` covers SSH/account setup. Don't duplicate that here.
 - Cinematic asset slots live in `public/cinematic/` — see that directory's README for encoding standards if asked to add a hero video or update the crown model.
